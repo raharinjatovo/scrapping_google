@@ -1,7 +1,7 @@
 
 <?php
 
-//header('Content-Type: application/json');
+header('Content-Type: application/json');
 $target_url = "https://www.google.com/search?client=firefox-b-d&q=".rawurlencode(htmlspecialchars($_GET['search']))."";
 $userAgent = 'Googlebot/2.1 (http://www.googlebot.com/bot.html)';
 
@@ -20,7 +20,7 @@ echo "<br />cURL error number:" .curl_errno($ch);
 echo "<br />cURL error:" . curl_error($ch);
 exit;
 }
-
+//
 
 
 
